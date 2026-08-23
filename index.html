@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Nadine</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#E89EB8',
+                        white: '#FFFFFF',
+                        dark: '#333333'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS for Scroll Animations -->
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #FFFFFF;
+            overflow-x: hidden;
+        }
+
+        .animate-scroll {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s ease-out;
+        }
+        
+        .animate-scroll.show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .hover-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(232, 158, 184, 0.4);
+        }
+    </style>
+</head>
+<body class="text-dark">
+
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-primary">Nadine.</a>
+            <div class="hidden md:flex space-x-6 text-sm font-semibold">
+                <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                <a href="#about" class="hover:text-primary transition-colors">About</a>
+                <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
+                <a href="#certificates" class="hover:text-primary transition-colors">Certificates</a>
+                <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-20">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center text-center md:text-left gap-10 animate-scroll">
+            <div class="w-48 h-48 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-primary shadow-xl">
+                <!-- Ganti src dengan link foto profil Nadine -->
+                <img src="profil.jpeg" alt="Foto Profil Nadine" class="w-full h-full object-cover">
+            </div>
+            <div class="max-w-xl">
+                <h2 class="text-xl md:text-2xl font-medium text-gray-500 mb-2">Hello, i'm</h2>
+                <h1 class="text-4xl md:text-6xl font-bold text-primary mb-4">Nadine Alvaretta Azarine</h1>
+                <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                    An Information Technology student at Metland Vocational School, Cibitung, Bekasi. I chose Software and Game Development (PPLG) because I am passionate about turning creative ideas into real-world digital solutions. Driven by my love for coding, I bring strong problem-solving, teamwork, and adaptability to every project.
+                </p>
+                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-pink-400 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                    <i class="fab fa-github mr-2"></i> See My Project
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12 animate-scroll">Skills & Expertise</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Hard Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-md animate-scroll hover-card transition-all duration-300">
+                    <h3 class="text-xl font-bold mb-6 flex items-center text-dark"><i class="fas fa-laptop-code text-primary mr-3 text-2xl"></i> Hard Skills</h3>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-primary/10 text-primary font-semibold rounded-lg">HTML & CSS</span>
+                        <span class="px-4 py-2 bg-primary/10 text-primary font-semibold rounded-lg">JavaScript (Basic)</span>
+                        <span class="px-4 py-2 bg-primary/10 text-primary font-semibold rounded-lg">PHP (Basic)</span>
+                        <span class="px-4 py-2 bg-primary/10 text-primary font-semibold rounded-lg">Tailwind CSS</span>
+                        <span class="px-4 py-2 bg-primary/10 text-primary font-semibold rounded-lg">Microsoft Office</span>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-md animate-scroll hover-card transition-all duration-300">
+                    <h3 class="text-xl font-bold mb-6 flex items-center text-dark"><i class="fas fa-users text-primary mr-3 text-2xl"></i> Soft Skills</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Seni Pertunjukan & Tari</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Manajemen Keuangan (Bendahara)</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Public Speaking & Mentoring</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-primary mr-3"></i> Kerjasama Tim & Komunikasi</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12 animate-scroll">Experience</h2>
+            <div class="max-w-3xl mx-auto border-l-4 border-primary pl-6 space-y-10">
+                <div class="relative animate-scroll">
+                    <div class="absolute -left-9 bg-primary w-5 h-5 rounded-full border-4 border-white mt-1"></div>
+                    <h3 class="text-xl font-bold text-dark">Bendahara Ekstrakurikuler Seni Pertunjukan</h3>
+                    <p class="text-sm text-primary font-semibold mb-2">Sekolah / Organisasi</p>
+                    <p class="text-gray-600">Bertanggung jawab penuh atas pengelolaan kas keuangan, menyusun laporan keuangan kegiatan, dan mengatur anggaran untuk berbagai keperluan pementasan seni.</p>
+                </div>
+                <div class="relative animate-scroll">
+                    <div class="absolute -left-9 bg-primary w-5 h-5 rounded-full border-4 border-white mt-1"></div>
+                    <h3 class="text-xl font-bold text-dark">Instruktur Workshop PPLG</h3>
+                    <p class="text-sm text-primary font-semibold mb-2">Acara Internal / Jurusan</p>
+                    <p class="text-gray-600">Menjadi pembicara dan instruktur dalam workshop jurusan Pengembangan Perangkat Lunak dan Gim (PPLG). Membimbing peserta dalam memahami dasar-dasar logika pemrograman.</p>
+                </div>
+                <div class="relative animate-scroll">
+                    <div class="absolute -left-9 bg-primary w-5 h-5 rounded-full border-4 border-white mt-1"></div>
+                    <h3 class="text-xl font-bold text-dark">Penari & Performer Acara Sekolah</h3>
+                    <p class="text-sm text-primary font-semibold mb-2">Berbagai Event Sekolah</p>
+                    <p class="text-gray-600">Aktif berpartisipasi dan sering tampil menari untuk memeriahkan berbagai acara resmi, pentas seni, dan perayaan penting di lingkungan sekolah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates & Licenses -->
+    <section id="certificates" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12 animate-scroll">Certificates & Licenses</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tambahkan/ubah sertifikat di sini -->
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden animate-scroll hover-card transition-all duration-300">
+                    <div class="bg-primary/20 h-40 flex items-center justify-center">
+                        <i class="fas fa-certificate text-5xl text-primary"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-lg mb-2">Sertifikat Workshop PPLG</h3>
+                        <p class="text-sm text-gray-500">Sebagai Instruktur / Panitia</p>
+                    </div>
+                </div>
+                <div class="bg-white rounded-2xl shadow-md overflow-hidden animate-scroll hover-card transition-all duration-300">
+                    <div class="bg-primary/20 h-40 flex items-center justify-center">
+                        <i class="fas fa-award text-5xl text-primary"></i>
+                    </div>
+                    <div class="p-6 text-center">
+                        <h3 class="font-bold text-lg mb-2">Penghargaan Seni Tari</h3>
+                        <p class="text-sm text-gray-500">Penyelenggara / Sekolah</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Website Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12 animate-scroll">Website Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden animate-scroll hover-card transition-all duration-300 border border-gray-100">
+                    <!-- Ganti src dengan screenshot project asli -->
+                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=800" alt="Project 1" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="text-xs font-bold bg-primary/10 text-primary px-2 py-1 rounded">PHP</span>
+                            <span class="text-xs font-bold bg-primary/10 text-primary px-2 py-1 rounded">CSS</span>
+                            <span class="text-xs font-bold bg-primary/10 text-primary px-2 py-1 rounded">laravel</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Website Metland Mind</h3>
+                        <p class="text-gray-600 mb-4 text-sm">website yang dibuat untuk ujian dan kuis yang menggunakan akun siswa.</p>
+                        <a href="https://github.com/NadineAlvaretta/Metland-Mind" class="text-primary font-bold hover:underline">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden animate-scroll hover-card transition-all duration-300 border border-gray-100">
+                    <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=800" alt="Project 2" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <span class="text-xs font-bold bg-primary/10 text-primary px-2 py-1 rounded">PHP Basic</span>
+                            <span class="text-xs font-bold bg-primary/10 text-primary px-2 py-1 rounded">Bootstrap/Tailwind</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Website Pendaftaran Workshop </h3>
+                        <p class="text-gray-600 mb-4 text-sm">Sistem pendaftaran Workshop sederhana berbasis PHP Native.</p>
+                        <a href="https://github.com/NadineAlvaretta/devWorkshop" class="text-primary font-bold hover:underline">Lihat Detail <i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-10 mt-10">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold mb-6">Let's Connect</h3>
+            <div class="flex justify-center space-x-6 mb-8">
+                <a href="https://github.com/NadineAlvaretta" class="w-12 h-12 bg-white text-primary rounded-full flex items-center justify-center text-xl hover:scale-110 hover:shadow-lg transition-transform duration-300">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/nadine-alvaretta-azarine-b1062a40a" class="w-12 h-12 bg-white text-primary rounded-full flex items-center justify-center text-xl hover:scale-110 hover:shadow-lg transition-transform duration-300">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/ndne_alr/" class="w-12 h-12 bg-white text-primary rounded-full flex items-center justify-center text-xl hover:scale-110 hover:shadow-lg transition-transform duration-300">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <p class="text-white/80 text-sm">
+                &copy; 2026 Nadine Alvaretta Azarine.
+            </p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Scroll Animations -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15 
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('show');
+                    } else {
+                        entry.target.classList.remove('show');
+                    }
+                });
+            }, observerOptions);
+
+            const animatedElements = document.querySelectorAll('.animate-scroll');
+            animatedElements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
