@@ -65,7 +65,7 @@
                 <a href="#home" class="hover:text-primary transition-colors">Home</a>
                 <a href="#about" class="hover:text-primary transition-colors">About</a>
                 <a href="#experience" class="hover:text-primary transition-colors">Experience</a>
-                <a href="#certificates" class="hover:text-primary transition-colors">Certificates</a>
+                <a href="#certificates" class="hover:text-primary transition-colors">Documentation</a>
                 <a href="#projects" class="hover:text-primary transition-colors">Projects</a>
             </div>
         </div>
@@ -84,7 +84,7 @@
                 <p class="text-lg text-gray-600 mb-8 leading-relaxed">
                     An Information Technology student at Metland Vocational School, Cibitung, Bekasi. I chose Software and Game Development (PPLG) because I am passionate about turning creative ideas into real-world digital solutions. Driven by my love for coding, I bring strong problem-solving, teamwork, and adaptability to every project.
                 </p>
-                <a href="#" class="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-pink-400 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <a href="#projects" class="inline-block bg-primary text-white px-8 py-3 rounded-full font-semibold shadow-lg hover:bg-pink-400 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
                     <i class="fab fa-github mr-2"></i> See My Project
                 </a>
             </div>
@@ -148,29 +148,99 @@
         </div>
     </section>
 
-    <!-- Certificates & Licenses -->
+    <!-- Documentation / Carousel Section (Bootstrap Style) -->
     <section id="certificates" class="py-20 bg-gray-50">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center text-primary mb-12 animate-scroll">Certificates & Licenses</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Tambahkan/ubah sertifikat di sini -->
-                <div class="bg-white rounded-2xl shadow-md overflow-hidden animate-scroll hover-card transition-all duration-300">
-                    <div class="bg-primary/20 h-40 flex items-center justify-center">
-                        <i class="fas fa-certificate text-5xl text-primary"></i>
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12 animate-scroll">Dokumentasi Kegiatan</h2>
+            
+            <!-- Carousel Container -->
+            <div class="relative overflow-hidden rounded-2xl shadow-xl bg-gray-700 animate-scroll h-80 md:h-96">
+                <!-- Wrapper Slides -->
+                <div id="carousel-track" class="flex h-full transition-transform duration-500 ease-in-out">
+                    
+                    <!-- Slide 1 -->
+                    <div class="min-w-full h-full relative flex items-center justify-center">
+                        <img src="dokum/workshop.jpg" alt="Workshop PPLG" class="w-full h-full object-cover absolute inset-0 opacity-50">
+                        <div class="relative z-10 text-center text-white px-6">
+                            <h3 class="text-2xl md:text-4xl font-bold mb-2">Workshop PPLG</h3>
+                            <p class="text-sm md:text-base text-gray-200">Momen saat menjadi instruktur dan membimbing peserta dasar pemrograman.</p>
+                        </div>
                     </div>
-                    <div class="p-6 text-center">
-                        <h3 class="font-bold text-lg mb-2">Sertifikat Workshop PPLG</h3>
-                        <p class="text-sm text-gray-500">Sebagai Instruktur / Panitia</p>
+
+                    <!-- Slide 2 -->
+                    <div class="min-w-full h-full relative flex items-center justify-center">
+                        <img src="dokum/warnawarni.jpeg" alt="Pentas Seni" class="w-full h-full object-cover absolute inset-0 opacity-50">
+                        <div class="relative z-10 text-center text-white px-6">
+                            <h3 class="text-2xl md:text-4xl font-bold mb-2">Warna Warni Nusantara</h3>
+                            <p class="text-sm md:text-base text-gray-200">Berpartisipasi aktif dan tampil menari dalam event finalis duta sekolah smk metland cibitung.</p>
+                        </div>
                     </div>
+
+                    <!-- Slide 3 -->
+                    <div class="min-w-full h-full relative flex items-center justify-center">
+                        <img src="dokum/Classmeet.jpeg" alt="Pengelolaan Keuangan" class="w-full h-full object-cover absolute inset-0 opacity-50">
+                        <div class="relative z-10 text-center text-white px-6">
+                            <h3 class="text-2xl md:text-4xl font-bold mb-2">ClassMeet</h3>
+                            <p class="text-sm md:text-base text-gray-200">Berpartisipasi aktif dan tampil menari dalam event ClassMeet</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="min-w-full h-full relative flex items-center justify-center">
+                        <img src="dokum/tahunbaru.png" alt="Pengelolaan Keuangan" class="w-full h-full object-cover absolute inset-0 opacity-50">
+                        <div class="relative z-10 text-center text-white px-6">
+                            <h3 class="text-2xl md:text-4xl font-bold mb-2">Konser Amal Untuk Sumatera</h3>
+                            <p class="text-sm md:text-base text-gray-200">Berpartisipasi aktif dan tampil menari dalam konser amal untuk sumatera pada tahun baru menyambut 2026</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="min-w-full h-full relative flex items-center justify-center">
+                        <img src="dokum/metschoorama.JPG" alt="Pengelolaan Keuangan" class="w-full h-full object-cover absolute inset-0 opacity-50">
+                        <div class="relative z-10 text-center text-white px-6">
+                            <h3 class="text-2xl md:text-4xl font-bold mb-2">Acara Metschoorama</h3>
+                            <p class="text-sm md:text-base text-gray-200">Berpartisipasi aktif dan tampil menari dalam event ramadhan</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 6 -->
+                    <div class="min-w-full h-full relative flex items-center justify-center">
+                        <img src="dokum/parenting.jpeg" alt="Pengelolaan Keuangan" class="w-full h-full object-cover absolute inset-0 opacity-50">
+                        <div class="relative z-10 text-center text-white px-6">
+                            <h3 class="text-2xl md:text-4xl font-bold mb-2">Parenting Calon Siswa Baru</h3>
+                            <p class="text-sm md:text-base text-gray-200">Berpartisipasi aktif dan tampil menari dalam acara parenting calon siswa baru smk metland cibitung</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 7 -->
+                    <div class="min-w-full h-full relative flex items-center justify-center">
+                        <img src="dokum/wisuda.jpeg" alt="Pengelolaan Keuangan" class="w-full h-full object-cover absolute inset-0 opacity-50">
+                        <div class="relative z-10 text-center text-white px-6">
+                            <h3 class="text-2xl md:text-4xl font-bold mb-2">Wisuda Tahun 2026</h3>
+                            <p class="text-sm md:text-base text-gray-200">Berpartisipasi aktif dan tampil menari dalam acara wisuda angkatan 3 smk metland cibitung</p>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="bg-white rounded-2xl shadow-md overflow-hidden animate-scroll hover-card transition-all duration-300">
-                    <div class="bg-primary/20 h-40 flex items-center justify-center">
-                        <i class="fas fa-award text-5xl text-primary"></i>
-                    </div>
-                    <div class="p-6 text-center">
-                        <h3 class="font-bold text-lg mb-2">Penghargaan Seni Tari</h3>
-                        <p class="text-sm text-gray-500">Penyelenggara / Sekolah</p>
-                    </div>
+
+                <!-- Navigation Buttons (Prev / Next) -->
+                <button onclick="prevSlide()" class="absolute left-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all z-20">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button onclick="nextSlide()" class="absolute right-4 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/60 text-white w-10 h-10 rounded-full flex items-center justify-center transition-all z-20">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
+                <!-- Indicators / Line Dots (Bootstrap Style Bars) -->
+                <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
+                    <button onclick="goToSlide(0)" class="w-8 h-1.5 rounded-full bg-white transition-all dot-indicator" id="dot-0"></button>
+                    <button onclick="goToSlide(1)" class="w-8 h-1.5 rounded-full bg-white/50 transition-all dot-indicator" id="dot-1"></button>
+                    <button onclick="goToSlide(2)" class="w-8 h-1.5 rounded-full bg-white/50 transition-all dot-indicator" id="dot-2"></button>
+                    <button onclick="goToSlide(3)" class="w-8 h-1.5 rounded-full bg-white/50 transition-all dot-indicator" id="dot-3"></button>
+                    <button onclick="goToSlide(4)" class="w-8 h-1.5 rounded-full bg-white/50 transition-all dot-indicator" id="dot-4"></button>
+                    <button onclick="goToSlide(5)" class="w-8 h-1.5 rounded-full bg-white/50 transition-all dot-indicator" id="dot-5"></button>
+                    <button onclick="goToSlide(6)" class="w-8 h-1.5 rounded-full bg-white/50 transition-all dot-indicator" id="dot-6"></button>
+                    <button onclick="goToSlide(7)" class="w-8 h-1.5 rounded-full bg-white/50 transition-all dot-indicator" id="dot-7"></button>
                 </div>
             </div>
         </div>
@@ -183,7 +253,6 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
                 <!-- Project 1 -->
                 <div class="bg-white rounded-2xl shadow-lg overflow-hidden animate-scroll hover-card transition-all duration-300 border border-gray-100">
-                    <!-- Ganti src dengan screenshot project asli -->
                     <img src="metland-mind.png" alt="Project 1" class="w-full h-56 object-cover">
                     <div class="p-6">
                         <div class="flex gap-2 mb-3">
@@ -247,8 +316,48 @@
         </div>
     </footer>
 
-    <!-- JavaScript for Scroll Animations -->
+    <!-- Carousel Script & Scroll Animations -->
     <script>
+        // Carousel Logic
+        let currentSlide = 0;
+        const totalSlides = 7;
+
+        function updateCarousel() {
+            const track = document.getElementById('carousel-track');
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Update dots
+            for (let i = 0; i < totalSlides; i++) {
+                const dot = document.getElementById(`dot-${i}`);
+                if (i === currentSlide) {
+                    dot.classList.remove('bg-primary/30');
+                    dot.classList.add('bg-primary');
+                } else {
+                    dot.classList.remove('bg-primary');
+                    dot.classList.add('bg-primary/30');
+                }
+            }
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateCarousel();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateCarousel();
+        }
+
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+
+        // Auto slide every 5 seconds
+        setInterval(nextSlide, 10000);
+
+        // Scroll Animations Observer
         document.addEventListener('DOMContentLoaded', () => {
             const observerOptions = {
                 root: null,
